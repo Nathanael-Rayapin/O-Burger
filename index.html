@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <!-- JS -->
+    <script defer src="./assets/js/app.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <title>O'Burger</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <div class="row">
+            <div class="col-12 px-0">
+                <nav class="navbar d-flex justify-content-between align-items-center">
+                    <div class="brand col-5">
+                        <img src="./assets/img/logo.png" alt="Logo">
+                    </div>
+                    <div class="menu d-none d-lg-block col-lg-6 col-xl-5 me-5">
+                        <ul class="menu-list d-flex justify-content-between mb-0">
+                            <li>Accueil</li>
+                            <li>Recettes de saison</li>
+                            <li>Entrées</li>
+                            <li>Plats</li>
+                            <li>Desserts</li>
+                        </ul>
+                    </div>
+                    <div class="burger-menu col-5 col-md-2 d-lg-none text-center">
+                        <i class="bi bi-list text-white"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Edito (Cover) -->
+        <div class="row">
+            <div class="edito-container col-12 px-0">
+                <div class="edito d-flex justify-content-center align-items-center h-100">
+                    <p class="random-text text-white" id="random-text"></p>
+                </div>
+            </div>
+        </div>
+        <!-- Menu  -->
+        <div class="row custom-padding">
+            <!-- Random Recipe -->
+            <div class="random-recipe-container col-12 my-5 px-0">
+                <div class="random-recipe">
+                    <p>Recette de Burger Random : <a href="" target="_blank" id="link-recipe">Recette de Burger aléatoire</a></p>
+                </div>
+            </div>
+            <!-- Recent Menu -->
+            <div class="recent-menu-container col-12 my-5 px-0">
+                <div class="recent-menu p-3">
+                    <h3 class="text-center text-sm-start mb-5">Menu récents</h3>
+                    <div class="classic d-flex flex-column flex-sm-row justify-content-between align-items-center mb-4">
+                        <div class="content">
+                            <h3 class="text-center text-sm-start">Classic</h3>
+                            <p class="text-center text-sm-start">Boeuf, comté affiné 18 mois, laitue iceberg, pickles, oignons caramélisés & notre sauce signature.</p>
+                        </div>
+                        <div class="price">
+                            <button class="btn text-white">10.40</button>
+                        </div>
+                    </div>
+                    <div class="wallace d-flex flex-column flex-sm-row justify-content-between align-items-center mb-4">
+                        <div class="content">
+                            <h3 class="text-center text-sm-start">Wallace</h3>
+                            <p class="text-center text-sm-start">Boeuf, blue stilton, bacon de boeuf, oignons caramélisés & notre sauce crème fraîche.</p>
+                        </div>
+                        <div class="price">
+                            <button class="btn text-white">10.40</button>
+                        </div>
+                    </div>
+                    <div class="nine d-flex flex-column flex-sm-row justify-content-between align-items-center mb-4">
+                        <div class="content">
+                            <h3 class="text-center text-sm-start">Nine</h3>
+                            <p class="text-center text-sm-start">Boeuf OU crispy chicken (au choix), cheddar mature affiné 9 mois, bacon de boeuf, laitue iceberg & notre sauce barbecue maison.</p>
+                        </div>
+                        <div class="price">
+                            <button class="btn text-white">10.40</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Best Rated Menu -->
+            <div class="rated-menu-container col-12 my-5 px-0">
+                <div class="rated-menu p-3">
+                    <h3 class="text-center text-sm-start mb-5">Menu les mieux notés</h3>
+                    <div class="smash d-flex flex-column flex-sm-row justify-content-between align-items-center mb-4">
+                        <div class="content">
+                            <h3 class="text-center text-sm-start">Smash</h3>
+                            <p class="text-center text-sm-start">Potato bun, boeuf smashé, oignons, american cheese, pickles et notre sauce Thousand.</p>
+                        </div>
+                        <div class="price">
+                            <button class="btn text-white">9.50</button>
+                        </div>
+                    </div>
+                    <div class="chopped-cheese d-flex flex-column flex-sm-row justify-content-between align-items-center mb-4">
+                        <div class="content">
+                            <h3 class="text-center text-sm-start">Chopped Cheese</h3>
+                            <p class="text-center text-sm-start">Potato bun, boeuf haché, oignons, american cheese, pickles et notre sauce Thousand.</p>
+                        </div>
+                        <div class="price">
+                            <button class="btn text-white">9.50</button>
+                        </div>
+                    </div>
+                    <div class="protest d-flex flex-column flex-sm-row justify-content-between align-items-center mb-4">
+                        <div class="content">
+                            <h3 class="text-center text-sm-start">Protest</h3>
+                            <p class="text-center text-sm-start">Boeuf, chèvre, champignons caramélisés, roquette & notre sauce moutarde et poivre.</p>
+                        </div>
+                        <div class="price">
+                            <button class="btn text-white">10.40</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="row">
+            <div class="footer-container col-12 px-0">
+                <footer class="footer d-flex flex-column flex-lg-row justify-content-between align-items-center py-3 custom-padding">
+                    <div class="mentions col-12 col-lg-3">
+                        <ul class="px-0 px-lg-4 text-center text-lg-start mb-0">
+                            <li>Mentions légales</li>
+                            <li class="my-3">Page de contact</li>
+                        </ul>
+                        <p class="text-center text-lg-start mb-0">© 2013-2023 FastFood — hello@fastfood.fr</p>
+                    </div>
+                    <div class="about-us col-12 col-lg-5 mt-5">
+                        <p class="text-center text-lg-start">Savourer de délicieux burgers, dans un lieu inspiré par l’histoire, c’est ce que nous avons imaginé pour vous. Nous rendons hommage aux grands de ce monde et aux burgers! Un concept original, des burgers savoureux, une cuisine maison, saine et fraîche, un combo parfait!</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
